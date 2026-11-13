@@ -2,9 +2,12 @@
 name: Deploy Monitoring
 
 on:
+  workflow_dispatch:
   push:
-    branches: [main]
-    paths: ['monitoring/**']
+    branches:
+      - main
+    paths:
+      - 'monitoring/**'
 
 jobs:
   deploy:
